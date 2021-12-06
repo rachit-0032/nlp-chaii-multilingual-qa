@@ -1,0 +1,22 @@
+- Team Name: TowardsNLP
+
+- Team details:
+	- Rachit Jain (rachit1jain)
+	- Subhalingam D (subhu2008)
+
+
+- External Datasets used:
+	* official chaii dataset
+	* hindi from mlqa/xquad: 
+		- https://www.kaggle.com/rhtsingh/mlqa-hindi-processed
+	* tamil translated from squad
+		- https://www.kaggle.com/msafi04/squad-translated-to-tamil-for-chaii
+
+- Model used: xlm-roberta-large (pre)fine-tuned on xquad
+
+(Other hyperparameters can be found from the argparse namespace in the training notebook)
+
+---
+
+Regarding training:
+The compiled dataset has been shared on kaggle (www.kaggle.com/dataset/006ca8d5f7fa611f2c5acc89b75f4cf7e2b0b4279366c2d8a3d6423e14f4fecb). While running the training script, these files have to be placed under `dataset/` directory (relative to the training script).
